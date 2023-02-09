@@ -1,0 +1,12 @@
+git init .   (Initialized empty Git repository in C:/Git/.git/)
+(drwxr-xr-x 1 Gaurav Bhalekar 197121 0 Feb  9 19:46 .git/) it will create hidden file called .git once you initialize
+
+git status
+git add <file_name>
+git commit -m "this is fist commit"
+git config --global user.email "gauravbhalekar5@gmail.com"
+git config --global user.name "Gaurav Bhalekar"
+git log            (to track all commits and chnages)
+git config --list  (it will give you info which you have set like author name and his email ID)
+git remote add origin https://github.com/gauravbhalekar5/Git.git  (Added remote repo to local repo)
+git push -u origin master
