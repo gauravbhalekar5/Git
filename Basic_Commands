@@ -14,3 +14,10 @@ git clone <remote_repo>  (First time we need to clone the repo on new machine)
 git pull           (To Pull the Data)
 
 If the repo exist on your system then you need to pull the data and if the repo does not exist then you need to clone the repo
+git annotate index.html  (Annotates each line in the given file with information from the commit which introduced the line)
+git diff   (Diffing is a useful function in Git that allows you to compare two files, branches, or commits in a Git repository. This allows you to see what changes have been made since a certain point in your repository.)
+git checkout -- file_name        (If we want to revert changes from working area)
+git checkout -- .                (If we want to revert all changes from working area)
+git restore --staged file_name   (If we want to revert changes from staging area)
+git restore --.                  (If we want to revert all changes from staging area)
+git checkout <branch_name)       (If we want to revert chnages after commiting)
