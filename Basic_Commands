@@ -21,3 +21,53 @@ git checkout -- .                (If we want to revert all changes from working 
 git restore --staged file_name   (If we want to revert changes from staging area)
 git restore --.                  (If we want to revert all changes from staging area)
 git checkout <branch_name)       (If we want to revert chnages after commiting)
+git init .   (Initialized empty Git repository in C:/Git/.git/)
+(drwxr-xr-x 1 Gaurav Bhalekar 197121 0 Feb  9 19:46 .git/) it will create hidden file called .git once you initialize
+
+git status
+git add <file_name>
+git commit -m "this is fist commit"
+git config --global user.email "gauravbhalekar5@gmail.com"
+git config --global user.name "Gaurav Bhalekar"
+git log            (to track all commits and chnages)
+git config --list  (it will give you info which you have set like author name and his email ID)
+git remote add origin https://github.com/gauravbhalekar5/Git.git  (Added remote repo to local repo)
+git push -u origin master
+git clone <remote_repo>  (First time we need to clone the repo on new machine)
+git pull           (To Pull the Data)
+
+If the repo exist on your system then you need to pull the data and if the repo does not exist then you need to clone the repo
+git annotate index.html  (Annotates each line in the given file with information from the commit which introduced the line)
+git diff   (Diffing is a useful function in Git that allows you to compare two files, branches, or commits in a Git repository. This allows you to see what changes have been made since a certain point in your repository.)
+Add Collaborators
+
+git checkout -- file_name        (If we want to revert changes from working area)
+git checkout -- .                (If we want to revert all changes from working area)
+git restore --staged file_name   (If we want to revert changes from staging area)
+git restore --.                  (If we want to revert all changes from staging area)
+git checkout <commit_ID)         (If we want to revert chnages after commiting. After this command our HEAD will point Master to previous commit)
+git checkout -                   (Our HEAD will point to MASTER again)
+git checkout HEAD~2              (After this command HEAD will point to previous 2 commit)
+git checkout -                   (Our HEAD will point to MASTER again latest)
+
+git reset <commit_ID>            (If we want to move our HEAD branch to previous commit) * main repository to staging area*
+git rebase -i HEAD~6             (If you have 6 commit then take HEAD~6, If you want to reduce commit length so we can merge all commit into single commit) Squased all commits in single commits
+
+git branch                       (This command will tell you about how many branches you have and in that * notify active brnach)                      
+git branch dev                   (It will create new beanch called dev. Here dev is the new branch name) officially we have 2 branched now
+git checkout dev                 (We can switch one branch to another branch)
+do some chnages in dev branch and commit it
+git checkout master              (You won't see any chnages on master branch because we did chnages in dev branch only)
+git checkout dev
+git push origin dev              (It will push all the changes to dev branch whatever we made changes in dev branch)
+git checkout master              (Do checkout to master branch)
+git merge dev master             (To merge the chnages with master branch)
+
+git branch -d <branch_name>      (To delete the branch)
+git checkout -b <branch_name>    (This command combines these two steps into one, creating a new branch and switching to it at the same time)
+
+
+
+
+
+
