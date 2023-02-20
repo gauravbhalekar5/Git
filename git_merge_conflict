@@ -1,0 +1,17 @@
+Reasons of Git Merge Conflict
+
+Git merge conflicts occur when two or more branches have changes that cannot be automatically merged together by Git. This happens when Git is unable to determine how to combine the changes because they conflict with each other.
+
+Here are some common reasons why merge conflicts can occur in Git:
+
+Conflicting changes to the same file: If two or more branches have made changes to the same file, and these changes conflict with each other, a merge conflict will occur.
+
+Renaming or moving files: If a file is renamed or moved in one branch and modified in another branch, Git may not be able to automatically merge the changes.
+
+Deleting or adding files: If a file is deleted in one branch and modified in another branch, or if a file is added in one branch and modified in another branch, Git may not be able to automatically merge the changes.
+
+Changes to whitespace or formatting: If two branches have changes that affect the whitespace or formatting of a file, Git may not be able to automatically merge the changes.
+
+Conflicting commits: If two or more branches have commits that conflict with each other, Git may not be able to automatically merge the changes.
+
+When Git encounters a merge conflict, it will pause the merge process and prompt the user to resolve the conflict manually by editing the affected files and making the necessary changes. Once the conflicts are resolved, the merge can be completed.
